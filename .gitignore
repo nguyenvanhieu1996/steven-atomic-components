@@ -18,7 +18,7 @@
 /node_modules
 /.pnp
 .pnp.js
-# /yarn.lock
+/yarn.lock
 /yarn-error.lock
 
 # testing
