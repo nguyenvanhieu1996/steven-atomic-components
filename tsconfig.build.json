@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": false,
+    "newLine": "lf",
+    "pretty": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "stripInternal": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "target": "ES6",
+    "jsx": "react",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "outDir": "dist"
+  }
+}

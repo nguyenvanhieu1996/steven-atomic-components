@@ -1,0 +1,21 @@
+{
+  "name": "steven-atomic-components",
+  "version": "1.0.0",
+  "description": "steven atomic",
+  "main": "index.js",
+  "repository": "https://github.com/nguyenvanhieu1996/steven-atomic-components.git",
+  "author": "nguyenvanhieu1996 <nguyenhieu4477@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.66.3"
+  },
+  "devDependencies": {
+    "typescript": "4.3.5",
+    "@types/react-native": "0.63.3"
+  }
+}

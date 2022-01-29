@@ -1,0 +1,96 @@
+{
+  "root": true,
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "globals": {
+      "React": true,
+      "styled": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "react",
+      "react-hooks",
+      "import"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "prettier/react"
+    ],
+    "rules": {
+
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.js"
+        ],
+        "rules": {
+          "no-unused-vars": 0,
+          "@typescript-eslint/no-unused-vars": 2,
+          "no-undef": 0,
+          "react-hooks/rules-of-hooks": "error",
+          "react-hooks/exhaustive-deps": "warn",
+          "valid-jsdoc": 0,
+          "react/prop-types": 0,
+          "max-lines-per-function": ["error", 300],
+          "padding-line-between-statements": [
+            "error",
+            {
+              "blankLine": "always",
+              "prev": "multiline-block-like",
+              "next": "multiline-block-like"
+            },
+            {
+              "blankLine": "always",
+              "prev": "*",
+              "next": "return"
+            }
+          ],
+          "simple-import-sort/sort": "off",
+          "import/order": ["error", {"newlines-between": "never"}],
+          "camelcase": ["error", {"ignoreDestructuring": true}],
+          "eqeqeq": 2,
+          "no-negated-condition": "error",
+          "react/sort-comp": [2, {
+            "order": [
+              "static-methods",
+              "lifecycle",
+              "/^on.+$/",
+              "render",
+              "everything-else"
+            ]
+          }],
+          "complexity": ["error", { "max": 20 }],
+          "max-params":["error", 3],
+          "max-statements-per-line": ["error", { "max": 1 }],
+          "object-shorthand": ["error", "always"],
+          "no-redeclare": "off",
+          "react/self-closing-comp": ["error", {
+            "component": true,
+            "html": true
+          }]
+        }
+      }
+    ]
+}
